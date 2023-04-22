@@ -1,0 +1,52 @@
+.timeline {
+    @apply max-w-xl min-h-0 flex-col max-h-[100vh] overflow-y-scroll;
+    /* scroll-snap-type: both mandatory;   */
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  left: 50%;
+  top: initial;
+  margin-left: -3px;
+}
+
+.timeline::-webkit-scrollbar {
+  width: 0px;
+}
+
+.exp {
+  @apply min-h-[100vh] list-disc pt-20;
+  /*
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  */
+}
+
+.exp::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.company {
+  @apply text-2xl
+}
+
+.title {
+  @apply text-xl flex items-center
+}
+
+.fromTo {
+  @apply mb-3
+}
+
+.duities {
+  @apply text-sm
+}
+
+

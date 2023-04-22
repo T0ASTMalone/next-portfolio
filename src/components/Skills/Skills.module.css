@@ -1,0 +1,129 @@
+.skillsMarquee {
+  @apply 
+    /* todo: add inline prop to skills component */ 
+    /* absolute  */
+    mx-auto
+    max-w-[calc(100%_-_24px)]
+    lg:max-w-6xl
+    before:absolute 
+    before:h-[300px] 
+    before:w-[480px]
+    before:-translate-x-1/2 
+    before:rounded-full 
+    before:bg-gradient-radial 
+    before:from-white 
+    before:to-transparent 
+    before:blur-2xl 
+    before:content-[''] 
+    after:absolute 
+    after:-z-20 
+    after:h-[300px] 
+    after:w-[30%] 
+    after:left-0
+    after:right-0
+    after:!mx-auto
+    /* after:translate-x-[50%]*/
+    after:-translate-y-[80%]
+    after:bg-gradient-conic
+    after:from-sky-200
+    after:via-blue-200
+    after:blur-2xl
+    after:content-['']
+    before:dark:bg-gradient-to-br
+    before:dark:from-transparent
+    before:dark:to-blue-700
+    before:dark:opacity-10
+    after:dark:from-sky-900
+    after:dark:via-[#0141ff]
+    after:dark:opacity-40
+    before:lg:h-[360px]
+    mb-24
+}
+
+.skills, .skillsReverse {
+  @apply flex justify-around 
+}
+
+
+.skillsItem {
+  @apply min-w-[80px] mx-6
+}
+
+.marquee {
+  @apply w-full max-w-6xl  h-28  whitespace-nowrap overflow-hidden box-border relative grid;
+  grid-template-columns: fit-content(300%);
+}
+
+.marquee::before, .marquee::after {
+  @apply absolute h-full w-24 z-[1];
+  content: "";
+}
+
+.marquee::before {
+  left: 0;
+  background: linear-gradient(to right, black 5%, transparent 100%);
+}
+
+.marquee::after {
+  right: 0;
+  background: linear-gradient(to left, black 5%, transparent 100%);
+}
+
+.marqueeContent {
+  display: grid;
+  grid-template-columns: fit-content(100%) fit-content(100%) fit-content(100%);
+  animation: marquee 35s linear infinite forwards;
+}
+
+.marqueeContentReverse {
+  display: grid;  
+  direction: rtl;
+  grid-template-columns: fit-content(100%) fit-content(100%) fit-content(100%);
+  animation: marquee 35s linear infinite reverse;
+}
+.skillsItem img {
+  filter: grey;
+  -webkit-filter: grayscale(.5);
+  filter: grayscale(.5)
+}
+
+.skillsItem img:hover {
+  @apply filter-none transition-all duration-1000;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-66.6%); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

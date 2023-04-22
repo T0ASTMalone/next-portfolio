@@ -1,0 +1,76 @@
+[
+  {
+    "co": "Tesla",
+    "title": "Production Associate",
+    "from": "11-2017",
+    "to": "02-2018",
+    "location": "Fremont, CA",
+    "duties": [
+      "Regularly met and exceeded personal and company-set goals on efficiency and productivity",
+      "Able to quickly learn and adapt to new situations; worked with other roles to prevent bottlenecks.",
+      "Once proficient in my role, trained other personnel in proper safety procedures and protocols."
+    ]
+  },
+  {
+    "co": "Hunter Douglas",
+    "title": "Production Associate",
+    "from": "04-2018",
+    "to": "02-2019",
+    "location": "Broomfield, CO",
+    "duties": [
+      "Consistently met and exceeded efficiency goals in several roles",
+      "Knowledgeable in multiple departments, was readily used as the trainer for new employees and those unfamiliar with production."
+    ]
+  },
+  {
+    "co": "Rocky Mountain Orthodontics",
+    "title": "Production Associate",
+    "from": "02-2019",
+    "to": "03-2020",
+    "location": "Denver, CO",
+    "duties": [
+      "Created and streamlined new processes which increased productivity twofold.",
+      "Developed key performance indicators to set guidelines for future production models to prevent losses.",
+      "Created comprehensive training protocols to prioritize safety while maximizing personal productivity.",
+      "Implemented new procedures for triaging tasks, allowing performance goals to be achieved more consistently"
+    ]
+  },
+  {
+    "co": "Thinkful",
+    "title": "Full-Stack Web Development Student",
+    "from": "04-2019",
+    "to": "01-2020",
+    "location": "Denver, CO",
+    "duties": [
+      "Acquired knowledge and expertise in industry-leading practices and software development standards, focusing on HTML5, CSS3, JavaScript, JQuery, Node.js, React, algorithms, and data structures. ",
+      "Developed and deployed mobile-first applications while gaining proficiency in new programming languages and frameworks, through consistent collaboration with a senior web developer for several hours each week."
+    ]
+  },
+  {
+    "co": "GroovyTek",
+    "title": "Full-Stack Web Developer",
+    "from": "06-2020",
+    "to": "09-2021",
+    "location": "Centennial, CA",
+    "duties": [
+      "Developed and fine-tuned reporting tools, utilizing Chart.js data visualization library, to enhance visibility of critical performance indicators across the organization.",
+      "Developed and implemented new productivity tools and processes, resulting in an increase of productivity of up to 18%.",
+      "Improved load time by up to  90% on some pages through the implementation of efficient data fetching techniques such as AJAX requests.",
+      "Utilized Java and Google's Distance Matrix API to optimize the scheduling system, resulting in minimized scheduling errors and more precise drive time calculations."
+    ]
+  },
+  {
+    "co": "Ronday",
+    "title": "Software Engneer",
+    "from": "09-2021",
+    "to": "Present",
+    "location": "Bennett, CA",
+    "duties": [
+      "Collaborated with Product Designers and owners to bring marketing sites and new product features to life by converting Figma designs into functional code. ",
+      "Developed a robust set of admin and internal tools to facilitate efficient and secure management of app data, enabling the company and admins to save time and resources and enhancing overall productivity.",
+      "Utilized various optimization techniques such as caching using react-query, lazy loading, skeleton screens, and code splitting, resulting in significant improvements of up to 65% in page loading times.",
+      "Implemented react developer tools, profiling, and memoization techniques, among others to optimize UI, leading to performance enhancements of 100 - 300% in certain cases.",
+      "Implemented websocket syncing between clients using Socket.io for real-time user updates, as well as chan and notification features, with the incorporation of message throttling techniques to prevent spam."
+    ]
+  }
+]

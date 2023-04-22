@@ -1,0 +1,79 @@
+.nav {
+  @apply fixed top-0 backdrop-blur-md bg-[#22345d]/20 w-full;
+}
+
+.showName {
+  @apply animate-[slide-down_.20s_ease-in-out_forwards];
+}
+
+.hideName {
+  @apply animate-[slide-up_.50s_ease-in-out_forwards] ;
+}
+
+.name {
+  @apply text-xl text-white m-0;
+}
+
+.links {
+  @apply justify-between max-w-fit;
+}
+
+.linksOpen {
+  @apply absolute flex justify-between flex-col max-w-fit right-2 top-[60px] backdrop-blur-md bg-white/20 py-3 px-6 rounded-md;
+}
+
+.linksOpen .link {
+  @apply mb-3
+}
+
+.container {
+  @apply flex justify-between items-center max-w-7xl p-3 mx-auto;
+}
+
+.link {
+  @apply ml-3;
+}
+
+.links {
+  @apply hidden md:flex;
+}
+
+.defaultLinks {
+  @apply flex ml-auto w-fit; 
+}
+
+.button {
+  @apply md:hidden block
+}
+
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-60px); 
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0px); 
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+

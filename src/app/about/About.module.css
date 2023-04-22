@@ -1,0 +1,44 @@
+.aboutMe {
+  @apply flex min-h-screen flex-col items-center m-4 pt-24 max-w-6xl lg:mx-auto 
+}
+
+.skillsContainer {
+  @apply max-w-full w-full mb-20
+}
+
+.link {
+  @apply inline-block text-[#48aefc] transition duration-300 max-w-fit w-fit;
+} 
+
+/* TODO: add color to theme */
+.underline {
+  @apply block max-w-0 transition-all duration-500 h-0.5 bg-[#06e9fc];
+}
+
+.aboutMeContent {
+  @apply mb-6 
+}
+
+.header {
+  @apply text-3xl 
+}
+
+.headerContainer {
+  @apply flex flex-col md:flex-row mb-6 items-center max-w-xl
+}
+
+.headerContent {
+  @apply md:ml-3 text-center md:text-left
+}
+
+.content {
+  @apply mb-9 max-w-xl
+}
+
+.age {
+  @apply text-xl
+}
+
+.image {
+  @apply rounded-full
+}
