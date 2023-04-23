@@ -4,6 +4,7 @@ import experience from '../../assets/data/experience.json';
 import styles from './TimeLine.module.css';
 import JobIcon from './partials/JobIcon/JobIcon';
 import useEventListener from '@/hooks/utils';
+import Canvas from '../Globe/Canvas';
 
 
 type Experience = {
@@ -39,14 +40,14 @@ function ExperienceItem({ co, title, from, to, duties }: Experience) {
 }
 
 function TimeLine() {
-  const ref = useRef<HTMLUListElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   useEventListener('scroll', () => {
     if (!ref.current) {
       return;
     }
 
-    if (ref.current.clientTop <= 70) {
+    if (ref.current.offsetTop <= 40) {
       ref.current.style.overflowY = 'scroll';
       return;
     } 
@@ -54,9 +55,12 @@ function TimeLine() {
   });
 
   return (
-    <ul ref={ref} className={styles.timeline}>
-      {experience?.map?.((exp) => <ExperienceItem key={exp?.co} {...exp} />)}
-    </ul>
+    <div ref={ref} className={styles.timelineContainer}>
+      <Canvas />
+      <ul className={styles.timeline}>
+        {experience?.map?.((exp) => <ExperienceItem key={exp?.co} {...exp} />)}
+      </ul>
+    </div>
   )
 }
 
