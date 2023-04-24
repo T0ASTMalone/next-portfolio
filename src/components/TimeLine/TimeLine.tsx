@@ -1,5 +1,5 @@
 'use client'
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import experience from '../../assets/data/experience.json';
 import styles from './TimeLine.module.css';
 import JobIcon from './partials/JobIcon/JobIcon';
@@ -40,24 +40,40 @@ function ExperienceItem({ co, title, from, to, duties }: Experience) {
 }
 
 function TimeLine() {
-  const ref = useRef<HTMLDivElement>(null);
+  const [ref, setRef] = useState<HTMLUListElement | null>(null);
+  const [per, setPer] = useState<number>(0);
 
   useEventListener('scroll', () => {
-    if (!ref.current) {
+    if (!ref) {
       return;
     }
 
-    if (ref.current.offsetTop <= 40) {
-      ref.current.style.overflowY = 'scroll';
+    const { top } = ref.getBoundingClientRect();
+    // TODO: make header height constant
+    if (top <= 55) {
+      ref.style.overflowY = 'scroll';
       return;
     } 
-    ref.current.style.overflowY = 'hidden';
+
+    ref.style.overflowY = 'hidden';
   });
+  // TODO: figure out how to use with refs 
+  // Either make hook return ref to use or just use state like we are now
+  useEventListener('scroll', () => {
+    if (!ref) {
+      return;
+    }
+
+    const height = ref.scrollHeight;
+    const pos = ref.scrollTop;
+    
+    setPer(pos / height);
+  }, ref);
 
   return (
-    <div ref={ref} className={styles.timelineContainer}>
-      <Canvas />
-      <ul className={styles.timeline}>
+    <div className={styles.timelineContainer}>
+      <Canvas percent={per} />
+      <ul ref={(el) => setRef(el)} className={styles.timeline}>
         {experience?.map?.((exp) => <ExperienceItem key={exp?.co} {...exp} />)}
       </ul>
     </div>

@@ -1,5 +1,5 @@
 .aboutMe {
-  @apply flex min-h-screen flex-col items-center m-4 pt-24 max-w-6xl lg:mx-auto 
+  @apply flex min-h-screen flex-col items-center m-4 mb-0 pt-24 max-w-6xl lg:mx-auto 
 }
 
 .skillsContainer {

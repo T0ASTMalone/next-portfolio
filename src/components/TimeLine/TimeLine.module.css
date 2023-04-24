@@ -1,5 +1,7 @@
 .timelineContainer {
   @apply relative 
+    w-[calc(100vw_-_20px)]
+    max-w-[100vw]
     before:absolute 
     before:h-[300px] 
     before:w-[480px]
@@ -17,7 +19,6 @@
     after:left-0
     after:right-0
     after:!mx-auto
-    /* after:translate-x-[50%]*/
     after:-translate-y-[80%]
     after:bg-gradient-conic
     after:from-sky-200
@@ -31,11 +32,12 @@
     after:dark:from-sky-900
     after:dark:via-[#0141ff]
     after:dark:opacity-40
-    before:lg:h-[360px]
+    before:lg:h-[360px];
 }
 
 .timeline {
-    @apply min-h-0 flex-col max-h-[100vh] overflow-y-scroll relative overflow-x-visible 
+  @apply min-h-0 flex-col max-h-[calc(100vh_-_100px)] relative;
+  scroll-snap-type: both mandatory;
 }
 
 .timeline::after {
@@ -53,7 +55,8 @@
 }
 
 .exp {
-  @apply min-h-[100vh] list-disc pt-20 mx-auto max-w-xl
+  @apply min-h-[calc(100vh_-_100px)] mx-auto max-w-xl pl-3 border-l-2 border-white;
+  scroll-snap-align: start;
 }
 
 .exp::before {

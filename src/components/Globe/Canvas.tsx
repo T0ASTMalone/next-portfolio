@@ -1,36 +1,54 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
+import { OrbitControls, Stats } from '@react-three/drei';
 import { Canvas as FiberCanvas, ThreeElements, useFrame, useLoader } from 'react-three-fiber';
 import { TextureLoader } from 'three/src/loaders/TextureLoader';
 
-
-const Sphere = () => {
+const Sphere = ({ percentage = 0 }) => {
   const sphereREf = useRef<ThreeElements | null>(null);
-  const earf = useLoader(TextureLoader, '/images/8k_earth_normal_map.png');
+  const earf = useLoader(TextureLoader, '/images/earf-lights.jpg');
   /*
-  useFrame(() => {
-    if (!sphereREf?.current?.rotation) {
+    useFrame(() => {
+    if (!sphereREf.current) {
       return;
     }
-    sphereREf.current.rotation.x += 0.001;
+    // TODO rotate on scroll
+    // sphereREf.current.rotation.y -= 0.0003;
   });
   */
 
+  useEffect(() => {
+
+    if (!sphereREf.current) {
+      return;
+    }
+    // 30 to 15 
+    const rotation = 15 * percentage;
+    sphereREf.current.rotation.y = (Math.PI / 180) * (30 - rotation);
+    // sphereREf.current?.rotation?.y?.lerp?.((Math.PI / 180) * (30 - rotation));
+  }, [percentage])
+
   return (
-    <mesh ref={sphereREf} position={[0, -10, 0]} rotation={[0, 0, 0]} >
-      <sphereBufferGeometry args={[25, 30, 30]} />
+    <mesh
+      ref={sphereREf}
+      position={[0, -20, 0]}
+      // start in california
+      rotation={[-(Math.PI / 180) * 15, (Math.PI / 180) * 30, 0]}
+    >
+      <sphereGeometry args={[25, 100, 100]} />
       <meshStandardMaterial map={earf} />
+      <OrbitControls />
     </mesh>
   );
 };
 
-function Canvas() {
+function Canvas({ percent }) {
   return (
     <FiberCanvas
       style={{ position: 'absolute', bottom: '0', left: '0' }}
-      camera={{ position: [0, 15, 25] }}
+      camera={{ position: [0, 0, 25] }}
     >
-      <pointLight position={[15, 25, 15]} />
-      <Sphere />
+      <ambientLight />
+      <Sphere percentage={percent} />
     </FiberCanvas>
   )
 }
