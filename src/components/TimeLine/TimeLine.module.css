@@ -36,7 +36,8 @@
 }
 
 .timeline {
-  @apply min-h-0 flex-col max-h-[calc(100vh_-_100px)] relative;
+  /* 200 (min-height) should be moved to Timeline.tsx */
+  @apply min-h-0 flex-col max-h-[calc(100vh_-_150px)] relative;
   scroll-snap-type: both mandatory;
 }
 
@@ -55,7 +56,8 @@
 }
 
 .exp {
-  @apply min-h-[calc(100vh_-_100px)] mx-auto max-w-xl pl-3 border-l-2 border-white;
+  /* 200 (min-height) should be moved to Timeline.tsx */
+  @apply min-h-[calc(100vh_-_150px)] mx-auto max-w-xl pl-3 border-l-2 border-white;
   scroll-snap-align: start;
 }
 

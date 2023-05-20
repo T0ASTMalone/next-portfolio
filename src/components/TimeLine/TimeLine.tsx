@@ -1,5 +1,5 @@
 'use client'
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import experience from '../../assets/data/experience.json';
 import styles from './TimeLine.module.css';
 import JobIcon from './partials/JobIcon/JobIcon';
@@ -50,10 +50,11 @@ function TimeLine() {
 
     const { top } = ref.getBoundingClientRect();
     // TODO: make header height constant
-    if (top <= 55) {
+    // move min height into this file from styles
+    if (top <= 150) {
       ref.style.overflowY = 'scroll';
       return;
-    } 
+    }
 
     ref.style.overflowY = 'hidden';
   });
@@ -66,15 +67,19 @@ function TimeLine() {
 
     const height = ref.scrollHeight;
     const pos = ref.scrollTop;
-    
     setPer(pos / height);
   }, ref);
 
+  const handleMouseOver = () => {
+    console.log('[Timeline] Mousing over Timeline')
+    ref?.focus()
+  }
+
   return (
-    <div className={styles.timelineContainer}>
+    <div onMouseOver={handleMouseOver} className={styles.timelineContainer}>
       <Canvas percent={per} />
       <ul ref={(el) => setRef(el)} className={styles.timeline}>
-        {experience?.map?.((exp) => <ExperienceItem key={exp?.co} {...exp} />)}
+        {experience.map?.((exp) => <ExperienceItem key={exp?.co} {...exp} />)}
       </ul>
     </div>
   )

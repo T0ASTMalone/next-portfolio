@@ -26,7 +26,9 @@ function Nav() {
       <nav className={styles.nav}>
         <div className={styles.container}>
           <p className={`${styles.name} ${!show ? styles.hideName : styles.showName}`} >
-            Miguel Ponce
+            <Link href="/">
+              Miguel Ponce
+            </Link>
           </p>
           <button onClick={() => setOpen((state) => !state)} className={styles.button}>
             <List size={24} /> 

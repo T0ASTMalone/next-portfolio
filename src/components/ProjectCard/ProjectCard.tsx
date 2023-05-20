@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { Tooltip } from 'react-tooltip'
 
 import ArrowRight from '@/components/Icons/ArrowRight'
 import Barricade from '@/components/Icons/Barricade'
@@ -18,7 +19,7 @@ type ProjectCardProps = {
 function ProjectCard({ name, src, desc, building }: ProjectCardProps) {
   return (
     <Link
-      href={`/pojects/${name.toLowerCase()}`}
+      href={`/projects/${name.toLowerCase().split(' ').join('-')}`}
       className="
             group rounded-lg border border-transparent px-5 py-4 
             transition-colors hover:border-gray-300 hover:bg-gray-100 
@@ -42,6 +43,9 @@ function ProjectCard({ name, src, desc, building }: ProjectCardProps) {
               weight="fill"
               color="#F0DC00"
               className="inline-block"
+              id="baracade"
+              data-tooltip-id="baracade"
+              data-tooltip-content="Under construction"
             />
           </>
         )}
@@ -59,6 +63,7 @@ function ProjectCard({ name, src, desc, building }: ProjectCardProps) {
       >
         {desc}
       </p>
+      <Tooltip id="baracade"/>
     </Link>
   );
 }

@@ -67,7 +67,7 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="spring logo"
-          src="/svg/skills/spring-plain.svg"
+          src="/svg/skills/spring-original.svg"
           width={100}
           className={styles.skill}
           height={100}
@@ -127,15 +127,14 @@ function SkillList({ reverse }: { reverse?: boolean }) {
           height={100}
         />
       </li>
-      {/*
-        <li className={styles.skillsItem}><Image
-          alt="thymeleaf logo"
-          src="/svg/skills/thymeleaf-icon.svg"
-          width={100}
-          className={styles.skill}
-          height={100}
-        /></li>
-        */}
+      <li className={styles.skillsItem}><Image
+        alt="thymeleaf logo"
+        src="/svg/skills/thymeleaf-icon.svg"
+        width={100}
+        className={styles.skill}
+        height={100}
+       />
+      </li>
       <li className={styles.skillsItem}>
         <Image
           alt="bootstrap logo"
@@ -184,10 +183,10 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="storybook logo"
-          src="/svg/skills/storybook-plain.svg"
-          width={100}
+          src="/svg/skills/storybook.svg"
+          width={90}
           className={styles.skill}
-          height={100}
+          height={90}
         />
       </li>
       <li className={styles.skillsItem}>
@@ -256,7 +255,7 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="figma logo"
-          src="/svg/skills/figma-plain.svg"
+          src="/svg/skills/figma-original.svg"
           width={100}
           className={styles.skill}
           height={100}

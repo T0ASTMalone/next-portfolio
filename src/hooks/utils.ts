@@ -1,13 +1,10 @@
 import { useCallback, useEffect, useRef } from "react";
 
-export default function useEventListener(name: string, cb: EventListenerOrEventListenerObject, element: HTMLElement | Window | null = window) {
+export default function useEventListener(name: string, cb: EventListenerOrEventListenerObject, element?: HTMLElement | Window) {
   useEffect(() => {
-    if (!element) {
-      return undefined;
-    }
-    element.addEventListener(name, cb);
+    (element || window)?.addEventListener(name, cb);
     return () => {
-      element.removeEventListener(name, cb);
+      (element || window)?.removeEventListener(name, cb);
     };
   }, [cb, element, name]);
 }

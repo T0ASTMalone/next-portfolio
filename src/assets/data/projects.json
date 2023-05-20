@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Ronday",
+    "slug": "ronday",
+    "links": [ 
+      { "name": "Ronday App", "link": "https://my.ronday.app" }, 
+      { "name": "website", "link": "https://rondayapp.com" } 
+    ],
+    "description": "Worked on my.ronday.app ui for both internal and external users"
+  },
+  {
+    "name": "GroovyTek",
+    "slug": "groovytek",
+    "links": [{ "name": "website", "link": "https://groovytek.com" }],
+    "description": "Responsible for spring boot backend and frontend."
+  },
+  {
+    "name": "Signal Toast",
+    "slug": "signal-toast",
+    "links": [
+      { "name": "live website", "link": "https://signaltoast.com" },
+      { "name": "github", "link": "https://github.com/T0ASTMalone/t0ast-rack" }
+    ],
+    "description": "Using the WebAudio Api, created an online modular synth."
+  },
+  {
+    "name": "WorkPlace",
+    "slug": "workplace",
+    "links": [{ "name": "website", "link": ""}]
+  }
+]
