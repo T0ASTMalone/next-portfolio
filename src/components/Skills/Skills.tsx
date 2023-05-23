@@ -31,7 +31,16 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="react logo"
-          src="/svg/skills/react-original.svg"
+          src="/svg/skills/react.svg"
+          width={100}
+          className={styles.skill}
+          height={100}
+        />
+      </li>
+      <li className={styles.skillsItem}>
+        <Image
+          alt="react logo"
+          src="/svg/skills/nextjs.svg"
           width={100}
           className={styles.skill}
           height={100}
@@ -40,7 +49,7 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="typescript logo"
-          src="/svg/skills/typescript-plain.svg"
+          src="/svg/skills/typescript.svg"
           width={100}
           className={styles.skill}
           height={100}
@@ -49,7 +58,7 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="postgresql logo"
-          src="/svg/skills/postgresql-plain.svg"
+          src="/svg/skills/postgresql.svg"
           width={100}
           className={styles.skill}
           height={100}
@@ -58,7 +67,7 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="java logo"
-          src="/svg/skills/java-plain.svg"
+          src="/svg/skills/java.svg"
           width={100}
           className={styles.skill}
           height={100}
@@ -67,7 +76,7 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="spring logo"
-          src="/svg/skills/spring-original.svg"
+          src="/svg/skills/spring.svg"
           width={100}
           className={styles.skill}
           height={100}
@@ -76,7 +85,7 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="javascript logo"
-          src="/svg/skills/javascript-plain.svg"
+          src="/svg/skills/javascript.svg"
           width={100}
           className={styles.skill}
           height={100}
@@ -85,7 +94,7 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="tailwind logo"
-          src="/svg/skills/tailwindcss-plain.svg"
+          src="/svg/skills/tailwindcss.svg"
           width={100}
           className={styles.skill}
           height={100}
@@ -94,7 +103,7 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="electron logo"
-          src="/svg/skills/electron-original.svg"
+          src="/svg/skills/electron.svg"
           width={100}
           className={styles.skill}
           height={100}
@@ -103,7 +112,7 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="html logo"
-          src="/svg/skills/html5-plain.svg"
+          src="/svg/skills/html5.svg"
           width={100}
           className={styles.skill}
           height={100}
@@ -112,7 +121,7 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="css logo"
-          src="/svg/skills/css3-plain.svg"
+          src="/svg/skills/css3.svg"
           width={100}
           className={styles.skill}
           height={100}
@@ -121,7 +130,7 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="knex logo"
-          src="/svg/skills/knex-svgrepo-com.svg"
+          src="/svg/skills/knex.svg"
           width={100}
           className={styles.skill}
           height={100}
@@ -129,7 +138,7 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       </li>
       <li className={styles.skillsItem}><Image
         alt="thymeleaf logo"
-        src="/svg/skills/thymeleaf-icon.svg"
+        src="/svg/skills/thymeleaf.svg"
         width={100}
         className={styles.skill}
         height={100}
@@ -138,7 +147,7 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="bootstrap logo"
-          src="/svg/skills/bootstrap-plain.svg"
+          src="/svg/skills/bootstrap.svg"
           width={100}
           className={styles.skill}
           height={100}
@@ -147,7 +156,7 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="jquery logo"
-          src="/svg/skills/jquery-plain.svg"
+          src="/svg/skills/jquery.svg"
           width={100}
           className={styles.skill}
           height={100}
@@ -156,7 +165,7 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="mocha logo"
-          src="/svg/skills/mocha-plain.svg"
+          src="/svg/skills/mocha.svg"
           width={100}
           className={styles.skill}
           height={100}
@@ -165,7 +174,7 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="jest logo"
-          src="/svg/skills/jest-plain.svg"
+          src="/svg/skills/jest.svg"
           width={100}
           className={styles.skill}
           height={100}
@@ -174,7 +183,7 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="auth0 logo"
-          src="/svg/skills/auth0-svgrepo-com.svg"
+          src="/svg/skills/auth0.svg"
           width={100}
           className={styles.skill}
           height={100}
@@ -192,7 +201,7 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="git logo"
-          src="/svg/skills/git-plain.svg"
+          src="/svg/skills/git.svg"
           width={100}
           className={styles.skill}
           height={100}
@@ -201,7 +210,7 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="github logo"
-          src="/svg/skills/github-original.svg"
+          src="/svg/skills/github.svg"
           width={100}
           className={styles.skill}
           height={100}
@@ -210,7 +219,7 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="vite"
-          src="/svg/skills/vitejs-svgrepo-com.svg"
+          src="/svg/skills/vitejs.svg"
           width={100}
           className={styles.skill}
           height={100}
@@ -219,7 +228,7 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="maven logo"
-          src="/svg/skills/maven-svgrepo-com.svg"
+          src="/svg/skills/maven.svg"
           width={100}
           className={styles.skill}
           height={100}
@@ -228,7 +237,7 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="jira logo"
-          src="/svg/skills/jira-plain.svg"
+          src="/svg/skills/jira.svg"
           width={100}
           className={styles.skill}
           height={100}
@@ -237,7 +246,7 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="confluence logo"
-          src="/svg/skills/confluence-original.svg"
+          src="/svg/skills/confluence.svg"
           width={100}
           className={styles.skill}
           height={100}
@@ -246,7 +255,7 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="bitbucket logo"
-          src="/svg/skills/bitbucket-original.svg"
+          src="/svg/skills/bitbucket.svg"
           width={100}
           className={styles.skill}
           height={100}
@@ -255,7 +264,7 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="figma logo"
-          src="/svg/skills/figma-original.svg"
+          src="/svg/skills/figma.svg"
           width={100}
           className={styles.skill}
           height={100}
@@ -264,7 +273,7 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       <li className={styles.skillsItem}>
         <Image
           alt="notion logo"
-          src="/svg/skills/notion-svgrepo-com.svg"
+          src="/svg/skills/notion.svg"
           width={100}
           className={styles.skill}
           height={100}

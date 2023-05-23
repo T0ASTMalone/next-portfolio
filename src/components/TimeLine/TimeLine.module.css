@@ -2,43 +2,13 @@
   @apply relative 
     w-[calc(100vw_-_20px)]
     max-w-[100vw]
-    before:absolute 
-    before:h-[300px] 
-    before:w-[480px]
-    before:-translate-x-1/2 
-    before:rounded-full 
-    before:bg-gradient-radial 
-    before:from-white 
-    before:to-transparent 
-    before:blur-2xl 
-    before:content-[''] 
-    after:absolute 
-    after:-z-20 
-    after:h-[300px] 
-    after:w-[30%] 
-    after:left-0
-    after:right-0
-    after:!mx-auto
-    after:-translate-y-[80%]
-    after:bg-gradient-conic
-    after:from-sky-200
-    after:via-blue-200
-    after:blur-2xl
-    after:content-['']
-    before:dark:bg-gradient-to-br
-    before:dark:from-transparent
-    before:dark:to-blue-700
-    before:dark:opacity-10
-    after:dark:from-sky-900
-    after:dark:via-[#0141ff]
-    after:dark:opacity-40
-    before:lg:h-[360px];
 }
 
 .timeline {
   /* 200 (min-height) should be moved to Timeline.tsx */
   @apply min-h-0 flex-col max-h-[calc(100vh_-_150px)] relative;
   scroll-snap-type: both mandatory;
+  transition: 1s ease-in-out;
 }
 
 .timeline::after {
@@ -56,7 +26,6 @@
 }
 
 .exp {
-  /* 200 (min-height) should be moved to Timeline.tsx */
   @apply min-h-[calc(100vh_-_150px)] mx-auto max-w-xl pl-3 border-l-2 border-white;
   scroll-snap-align: start;
 }

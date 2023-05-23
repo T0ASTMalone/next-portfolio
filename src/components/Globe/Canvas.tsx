@@ -6,16 +6,16 @@ import { TextureLoader } from 'three/src/loaders/TextureLoader';
 const Sphere = ({ percentage = 0 }) => {
   const sphereREf = useRef<ThreeElements | null>(null);
   const earf = useLoader(TextureLoader, '/images/earf-lights.jpg');
-  /*
-    useFrame(() => {
+
+  useFrame(() => {
     if (!sphereREf.current) {
       return;
     }
     // TODO rotate on scroll
-    // sphereREf.current.rotation.y -= 0.0003;
+    sphereREf.current.rotation.y -= 0.0003;
   });
-  */
 
+  /*
   useEffect(() => {
 
     if (!sphereREf.current) {
@@ -26,6 +26,7 @@ const Sphere = ({ percentage = 0 }) => {
     sphereREf.current.rotation.y = (Math.PI / 180) * (30 - rotation);
     // sphereREf.current?.rotation?.y?.lerp?.((Math.PI / 180) * (30 - rotation));
   }, [percentage])
+  */
 
   return (
     <mesh
