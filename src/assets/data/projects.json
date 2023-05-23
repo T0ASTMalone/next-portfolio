@@ -6,13 +6,15 @@
       { "name": "Ronday App", "link": "https://my.ronday.app" }, 
       { "name": "website", "link": "https://rondayapp.com" } 
     ],
-    "description": "Worked on my.ronday.app ui for both internal and external users"
+    "description": "Worked on my.ronday.app ui for both internal and external users",
+    "image": "/images/projects/ronday/all the butterflies.png"
   },
   {
     "name": "GroovyTek",
     "slug": "groovytek",
     "links": [{ "name": "website", "link": "https://groovytek.com" }],
-    "description": "Responsible for spring boot backend and frontend."
+    "description": "Responsible for spring boot backend and frontend.",
+    "image": "/images/projects/groovytek/groovytek-home.png"
   },
   {
     "name": "Signal Toast",
@@ -21,11 +23,13 @@
       { "name": "live website", "link": "https://signaltoast.com" },
       { "name": "github", "link": "https://github.com/T0ASTMalone/t0ast-rack" }
     ],
-    "description": "Using the WebAudio Api, created an online modular synth."
+    "description": "Using the WebAudio Api, created an online modular synth.",
+    "image": "/images/projects/modular-synth/modular-synth-in-progress.png"
   },
   {
     "name": "WorkPlace",
     "slug": "workplace",
-    "links": [{ "name": "website", "link": ""}]
+    "links": [{ "name": "website", "link": ""}],
+    "image": "/images/projects/workplace/workplace.png"
   }
 ]

@@ -1,0 +1,7 @@
+.project {
+  @apply flex min-h-screen flex-col items-center p-24;
+}
+
+.projectName {
+  @apply text-3xl;
+}

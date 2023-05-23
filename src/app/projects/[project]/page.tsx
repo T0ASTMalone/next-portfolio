@@ -1,6 +1,9 @@
 import React, { useMemo } from 'react'
 import projects from '../../../assets/data/projects.json';
 import { PageProps } from '../../../../.next/types/app/page';
+import Image from 'next/image';
+
+import styles from './Projects.module.css'
 
 function Project({ params }: PageProps) {
   const project = useMemo(
@@ -8,20 +11,31 @@ function Project({ params }: PageProps) {
     [params.project]
   );
 
+  if (!project) {
+    return <>Skelleto</>;
+  }
+
   return (
-    <main className="flex min-h-screen flex-col items-center p-24">
-      <h1>{project?.name}</h1>
-      <div>
+    <main className={styles.project}>
+      <Image
+        alt={`${project?.name} screenshot`}
+        src={project?.image}
+        className="mb-3"
+        width={500}
+        height={300}
+      />
+      <h1 className={styles.projectName}>{project?.name}</h1>
+      <div className={styles.description}>
         {project?.description}
       </div>
-      <div>
+      <div className={styles.projectLinksContainer}>
         {project?.links.map((l) => (
           <a 
-
             rel='noreferrer noopener'
             target='_blank'
             href={l.link} 
             key={l.name}
+            className={styles.projectLink}
           >
             {l.name}
           </a>
