@@ -6,7 +6,7 @@
       { "name": "Ronday App", "link": "https://my.ronday.app" }, 
       { "name": "website", "link": "https://rondayapp.com" } 
     ],
-    "skills": ["react", "react-query", "formik", "web-sockets", "typescript", "nextjs", "tailwind", "css3"],
+    "skills": ["react", "typescript", "nextjs", "tailwindcss", "css3"],
     "tags": ["frontend"],
     "description": "Worked on my.ronday.app ui for both internal and external users",
     "image": "/images/projects/ronday/all the butterflies.png"
@@ -15,7 +15,7 @@
     "name": "GroovyTek",
     "slug": "groovytek",
     "links": [{ "name": "website", "link": "https://groovytek.com" }],
-    "skills": ["java", "spring", "thymeleaf", "javascript", "postgres", "html5", "css3"],
+    "skills": ["java", "spring", "thymeleaf", "javascript", "postgresql", "html5", "css3"],
     "tags": ["frontend", "backend", "full-stack"],
     "description": "Responsible for spring boot backend and frontend.",
     "image": "/images/projects/groovytek/groovytek-home.png"
@@ -23,7 +23,7 @@
   {
     "name": "Signal Toast",
     "slug": "signal-toast",
-    "skills": ["react", "web-audio", "typescript", "css3"],
+    "skills": ["react", "typescript", "css3"],
     "tags": ["frontend"],
     "links": [
       { "name": "live website", "link": "https://signaltoast.com" },
@@ -35,7 +35,7 @@
   {
     "name": "WorkPlace",
     "slug": "workplace",
-    "skills": ["react", "postgres", "heroku", "css3", "nodejs", "express", "knex"],
+    "skills": ["react", "postgresql", "css3", "nodejs", "express", "knex"],
     "tags": ["frontend", "backend", "full-stack"],
     "links": [{ "name": "website", "link": ""}],
     "image": "/images/projects/workplace/workplace.png"

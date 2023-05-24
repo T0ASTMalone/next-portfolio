@@ -28,6 +28,13 @@ function Project({ params }: PageProps) {
       <div className={styles.description}>
         {project?.description}
       </div>
+      <ul className='flex'>
+        {project.skills.map(s => (
+          <li className='mx-2' key={s}>
+            <Image alt="skill" src={`/svg/skills/${s}.svg`} width={20} height={20} />
+          </li>
+        ))}
+      </ul>
       <div className={styles.projectLinksContainer}>
         {project?.links.map((l) => (
           <a 

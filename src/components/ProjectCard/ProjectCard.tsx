@@ -1,7 +1,10 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { Tooltip } from 'react-tooltip'
+
+import { motion } from 'framer-motion';
 
 import ArrowRight from '@/components/Icons/ArrowRight'
 import Barricade from '@/components/Icons/Barricade'
@@ -9,6 +12,7 @@ import Barricade from '@/components/Icons/Barricade'
 import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] })
+
 type ProjectCardProps = {
   name: string;
   src: string;
@@ -18,12 +22,20 @@ type ProjectCardProps = {
 
 function ProjectCard({ name, src, desc, building }: ProjectCardProps) {
   return (
+  <motion.div
+    initial={{ opacity: 0, y: -50 }}
+    animate={{ opacity: 1, y: 0 }}
+    className="
+
+            group rounded-lg border border-transparent px-5 py-4 
+            transition-colors 
+            hover:border-[#2c698d]
+            hover:dark:border-[#2c698d]
+    "
+  >
     <Link
       href={`/projects/${name.toLowerCase().split(' ').join('-')}`}
       className="
-            group rounded-lg border border-transparent px-5 py-4 
-            transition-colors hover:border-gray-300 hover:bg-gray-100 
-            hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30
           "
     >
       <Image
@@ -65,6 +77,7 @@ function ProjectCard({ name, src, desc, building }: ProjectCardProps) {
       </p>
       <Tooltip id="baracade"/>
     </Link>
+  </motion.div>
   );
 }
 

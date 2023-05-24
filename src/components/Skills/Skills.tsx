@@ -66,6 +66,24 @@ function SkillList({ reverse }: { reverse?: boolean }) {
       </li>
       <li className={styles.skillsItem}>
         <Image
+          alt="postgresql logo"
+          src="/svg/skills/nodejs.svg"
+          width={100}
+          className={styles.skill}
+          height={100}
+        />
+      </li>
+      <li className={styles.skillsItem}>
+        <Image
+          alt="postgresql logo"
+          src="/svg/skills/express.svg"
+          width={100}
+          className={styles.skill}
+          height={100}
+        />
+      </li>
+      <li className={styles.skillsItem}>
+        <Image
           alt="java logo"
           src="/svg/skills/java.svg"
           width={100}
