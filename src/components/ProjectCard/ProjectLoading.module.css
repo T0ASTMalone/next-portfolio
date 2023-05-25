@@ -1,0 +1,30 @@
+.loader {
+  @apply w-full max-w-2xl;
+}
+.previewContainer {
+  @apply absolute 
+    top-0 
+    left-0 
+    mx-auto 
+    p-3 
+    mt-24 
+    w-full 
+    h-52
+    max-w-full 
+    md:left-[50%]
+    sm:!translate-x-[-50%]
+    md:max-w-2xl
+    sm:h-96 
+    z-[-1];
+}
+
+.relativePreviewContainer {
+  @apply 
+    relative 
+    w-full 
+    h-full
+}
+/*
+  border-2
+  border-sky-100;
+*/

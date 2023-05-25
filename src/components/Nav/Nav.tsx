@@ -1,4 +1,5 @@
 'use client'
+
 import React, { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
@@ -26,6 +27,7 @@ const listItem = {
 function Nav() {
   const pathname = usePathname();
   const isHome = pathname === '/';
+
   const [open, setOpen] = useState(false);
   const [show, setShow] = useState(!isHome);
 

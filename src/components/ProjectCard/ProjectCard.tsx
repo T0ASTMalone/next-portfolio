@@ -17,34 +17,32 @@ type ProjectCardProps = {
   name: string;
   src: string;
   desc: string;
+  layoutId: string;
   building?: boolean;
 }
 
-function ProjectCard({ name, src, desc, building }: ProjectCardProps) {
+function ProjectCard({ name, src, desc, building, layoutId }: ProjectCardProps) {
   return (
   <motion.div
     initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}
     className="
-
-            group rounded-lg border border-transparent px-5 py-4 
-            transition-colors 
-            hover:border-[#2c698d]
-            hover:dark:border-[#2c698d]
+      group rounded-lg border border-transparent px-5 py-4 m-2
+      transition-colors 
+      hover:border-[#2c698d]
+      hover:dark:border-[#2c698d]
     "
   >
-    <Link
-      href={`/projects/${name.toLowerCase().split(' ').join('-')}`}
-      className="
-          "
-    >
-      <Image
-        alt={`${name} screenshot`}
-        src={src}
-        className="mb-3"
-        width={300}
-        height={100}
-      />
+    <Link href={`/projects/${name.toLowerCase().split(' ').join('-')}`}>
+      <motion.div layoutId={layoutId}>
+        <Image
+          alt={`${name} screenshot`}
+          src={src}
+          className="mb-3"
+          width={300}
+          height={100}
+        />
+      </motion.div>
       <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
         {name}
         {building && (
