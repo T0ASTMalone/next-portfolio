@@ -31,11 +31,11 @@ const Sphere = ({ percentage = 0 }) => {
   return (
     <mesh
       ref={sphereREf}
-      position={[0, -20, 0]}
+      position={[0, -15, 0]}
       // start in california
       rotation={[-(Math.PI / 180) * 15, (Math.PI / 180) * 30, 0]}
     >
-      <sphereGeometry args={[25, 100, 100]} />
+      <sphereGeometry args={[15, 100, 100]} />
       <meshStandardMaterial map={earf} />
       <OrbitControls />
     </mesh>

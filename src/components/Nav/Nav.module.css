@@ -1,5 +1,5 @@
 .nav {
-  @apply fixed top-0 backdrop-blur-md bg-[#22345d]/20 w-full;
+  @apply fixed top-0 backdrop-blur-md bg-[#22345d]/20 w-full z-10;
 }
 
 .showName {
@@ -19,7 +19,19 @@
 }
 
 .linksOpen {
-  @apply absolute flex justify-between flex-col max-w-fit right-2 top-[60px] backdrop-blur-md bg-white/20 py-3 px-6 rounded-md;
+  @apply
+    absolute 
+    flex 
+    justify-between 
+    flex-col 
+    right-2 
+    top-[60px] 
+    backdrop-blur-[12px] 
+    bg-[#22345d]
+    py-3 
+    px-6 
+    rounded-md
+    w-40;
 }
 
 .linksOpen .link {
@@ -31,7 +43,7 @@
 }
 
 .link {
-  @apply ml-3;
+  @apply md:ml-3;
 }
 
 .links {

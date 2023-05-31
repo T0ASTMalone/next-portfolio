@@ -74,7 +74,7 @@ function TimeLine() {
     console.log('[Timeline] Mousing over Timeline')
     ref?.focus()
   }
-
+  // TODO: lazy load the globe
   return (
     <div onMouseOver={handleMouseOver} className={styles.timelineContainer}>
       <Canvas percent={per} />

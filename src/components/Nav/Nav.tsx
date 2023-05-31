@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { usePathname } from 'next/navigation';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import styles from './Nav.module.css';
 import useEventListener from '@/hooks/utils';
 import { List } from '@phosphor-icons/react';
@@ -48,31 +48,65 @@ function Nav() {
     }
   });
 
+  const handleClick = () => {
+    setOpen(false);
+  }
+
   return (
-    <>
-      <motion.nav variants={container} initial="hidden" animate="show" className={styles.nav}>
-        <div className={styles.container}>
-          <p className={`${styles.name} ${!show && isHome ? styles.hideName : styles.showName}`} >
-            <Link href="/">
-              Miguel Ponce
-            </Link>
-          </p>
-          <button onClick={() => setOpen((state) => !state)} className={styles.button}>
-            <List size={24} /> 
-          </button>
-          <div className={open ? styles.linksOpen : styles.links}>
-            <motion.div variants={listItem}>
-              <Link className={styles.link} href="/about">
+    <motion.nav variants={container} initial="hidden" animate="show" className={styles.nav}>
+      <div className={styles.container}>
+        <p className={`${styles.name} ${!show && isHome ? styles.hideName : styles.showName}`} >
+          <Link href="/">
+            Miguel Ponce
+          </Link>
+        </p>
+        <button onClick={() => setOpen((state) => !state)} className={styles.button}>
+          <List size={24} />
+        </button>
+        <AnimatePresence>
+          <motion.div 
+            key={`${open}`} 
+            animate={{ x: 0  }} 
+            initial={{ x: 200  }} 
+            exit={{ x: 200  }} 
+            className={open ? styles.linksOpen : styles.links}
+          >
+            <motion.div 
+              className={styles.link} 
+              // variants={listItem}
+            >
+              <Link onClick={handleClick} href="/about">
                 About
               </Link>
             </motion.div>
-            <motion.a variants={listItem} className={styles.link} href="#skills">Skills</motion.a>
-            <motion.a variants={listItem} className={styles.link} href="#projects">Projects</motion.a>
-            <motion.a variants={listItem} className={styles.link} href="#contact">Contact</motion.a>
-          </div>
-        </div>
-      </motion.nav>
-    </> 
+            <motion.a
+              onClick={handleClick}
+              // variants={listItem}
+              className={styles.link}
+              href="#skills"
+            >
+              Skills
+            </motion.a>
+            <motion.a
+              onClick={handleClick}
+              // variants={listItem}
+              className={styles.link}
+              href="#projects"
+            >
+              Projects
+            </motion.a>
+            <motion.a
+              onClick={handleClick}
+              // variants={listItem}
+              className={styles.link}
+              href="#contact"
+            >
+              Contact
+            </motion.a>
+          </motion.div>
+        </AnimatePresence>
+      </div>
+    </motion.nav>
   );
 }
 
