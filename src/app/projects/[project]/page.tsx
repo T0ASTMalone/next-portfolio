@@ -4,6 +4,7 @@ import { PageProps } from '../../../../.next/types/app/page';
 import Image from 'next/image';
 
 import styles from './Projects.module.css'
+import PCarousel from './PCarousel';
 
 function Project({ params }: PageProps) {
   const project = useMemo(
@@ -48,6 +49,7 @@ function Project({ params }: PageProps) {
           </a>
         ))}
       </div>
+      <PCarousel />
     </main>
   )
 }

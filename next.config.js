@@ -3,6 +3,9 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  images: {
+    domains: ['encrypted-tbn0.gstatic.com', 'images.unsplash.com', 'i.seadn.io']
+  }
 }
 
 module.exports = nextConfig

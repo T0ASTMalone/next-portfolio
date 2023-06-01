@@ -8,7 +8,7 @@
     ],
     "skills": ["react", "typescript", "nextjs", "tailwindcss", "css3"],
     "tags": ["frontend"],
-    "description": "Worked on my.ronday.app ui for both internal and external users",
+    "description": "Ronday is a platform that eliminates isolation and enhances collaboration within teams, fostering a culture of productivity and teamwork. With Ronday, teams can work together more efficiently, exchange information quickly and easily, and ultimately achieve greater success.",
     "image": "/images/projects/ronday/all the butterflies.png"
   },
   {
@@ -17,7 +17,7 @@
     "links": [{ "name": "website", "link": "https://groovytek.com" }],
     "skills": ["java", "spring", "thymeleaf", "javascript", "postgresql", "html5", "css3"],
     "tags": ["frontend", "backend", "full-stack"],
-    "description": "Responsible for spring boot backend and frontend.",
+    "description": "GroovyTek is a personal technology training service that focuses on education and empowerment. We offer training sessions to help you get a handle on your technology.",
     "image": "/images/projects/groovytek/groovytek-home.png"
   },
   {
@@ -29,7 +29,7 @@
       { "name": "live website", "link": "https://signaltoast.com" },
       { "name": "github", "link": "https://github.com/T0ASTMalone/t0ast-rack" }
     ],
-    "description": "Using the WebAudio Api, created an online modular synth.",
+    "description": "Signal Toast is an app that let's you explor some of the concepts of web audio. By mimicing a modular synth you can explor the different audio nodes provided by the Web Audio API. ",
     "image": "/images/projects/modular-synth/modular-synth-in-progress.png"
   },
   {
@@ -38,6 +38,7 @@
     "skills": ["react", "postgresql", "css3", "nodejs", "express", "knex"],
     "tags": ["frontend", "backend", "full-stack"],
     "links": [{ "name": "website", "link": ""}],
+    "description": "WorkPlace is where team members can communicate and share ideas with one another in order to keep everyone in the loop and up to date with the day to day events of their workplace.",
     "image": "/images/projects/workplace/workplace.png"
   }
 ]
