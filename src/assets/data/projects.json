@@ -9,7 +9,8 @@
     "skills": ["react", "typescript", "nextjs", "tailwindcss", "css3"],
     "tags": ["frontend"],
     "description": "Ronday is a platform that eliminates isolation and enhances collaboration within teams, fostering a culture of productivity and teamwork. With Ronday, teams can work together more efficiently, exchange information quickly and easily, and ultimately achieve greater success.",
-    "image": "/images/projects/ronday/all the butterflies.png"
+    "image": "/images/projects/ronday/all the butterflies.png",
+    "images": []
   },
   {
     "name": "GroovyTek",
@@ -18,7 +19,12 @@
     "skills": ["java", "spring", "thymeleaf", "javascript", "postgresql", "html5", "css3"],
     "tags": ["frontend", "backend", "full-stack"],
     "description": "GroovyTek is a personal technology training service that focuses on education and empowerment. We offer training sessions to help you get a handle on your technology.",
-    "image": "/images/projects/groovytek/groovytek-home.png"
+    "image": "/images/projects/groovytek/groovytek-home.png",
+    "images": [
+      "/images/projects/groovytek/home-page.png",
+      "/images/projects/groovytek/home-page-scheduling.png",
+      "/images/projects/groovytek/shop-page.png"
+    ]
   },
   {
     "name": "Signal Toast",

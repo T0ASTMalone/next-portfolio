@@ -18,6 +18,7 @@ function Project({ params }: PageProps) {
 
   return (
     <main className={styles.project}>
+      {/*
       <Image
         alt={`${project?.name} screenshot`}
         src={project?.image}
@@ -25,6 +26,8 @@ function Project({ params }: PageProps) {
         width={500}
         height={300}
       />
+      */}
+      <PCarousel images={project.images ?? []} />
       <h1 className={styles.projectName}>{project?.name}</h1>
       <div className={styles.description}>
         {project?.description}
@@ -49,7 +52,6 @@ function Project({ params }: PageProps) {
           </a>
         ))}
       </div>
-      <PCarousel />
     </main>
   )
 }

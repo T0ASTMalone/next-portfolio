@@ -1,0 +1,20 @@
+.imgContainer {
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.imgContainer:hover .img {
+    display: block;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  pointer-events: none;
+  display: none;
+}
